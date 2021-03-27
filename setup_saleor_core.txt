@@ -56,13 +56,24 @@ sudo apt-get install libpangocairo-1.0-0
 
 ## Export these variables to os.
 
- export ALLOWED_HOSTS=13.127.7.177
- export ALLOWED_CLIENT_HOSTS=13.127.7.177
+ export ALLOWED_HOSTS=51.103.83.199
+ export ALLOWED_CLIENT_HOSTS=51.103.83.199
  export DEBUG=True
  export SECRET_KEY='your_secret_key'
- export INTERNAL_IPS=127.0.0.1,13.127.7.177,
- export DEFAULT_COUNTRY=IN
- export DEFAULT_CURRENCY=INR
+ export INTERNAL_IPS=127.0.0.1,51.103.83.199,
+ export DEFAULT_COUNTRY=EG
+ export DEFAULT_CURRENCY=EGP
+
+ 
+ ## Export these variables in windows
+ setx ALLOWED_HOSTS localhost,127.0.0.1
+ setx ALLOWED_CLIENT_HOSTS localhost,127.0.0.1
+ setx DEBUG True
+ setx SECRET_KEY 123456saleor
+ setx INTERNAL_IPS localhost,127.0.0.1
+ setx DEFAULT_COUNTRY EG
+ setx DEFAULT_CURRENCY EGP
+
 
 
 ### Applying migrations
